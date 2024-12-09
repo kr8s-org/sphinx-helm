@@ -19,6 +19,7 @@ test = [
 docs = [
     "sphinx",
     "sphinx-click",
+    "myst-parser>=3.0.1",
 ]
 
 [build-system]
