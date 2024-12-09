@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 import versioneer
 
-PACKAGE_NAME = "frigate"
+PACKAGE_NAME = "sphinx-helm"
 HERE = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(HERE, "README.md"), encoding="utf8").read()
 
@@ -30,7 +30,7 @@ setup(
     download_url="",
     author="Jacob Tomlinson",
     author_email="jtomlinson@nvidia.com",
-    description="A tool for autogenerating helm documentation.",
+    description="A Sphinx plugin for generating documentation for your Helm charts.",
     long_description=README,
     long_description_content_type="text/markdown",
     packages=PACKAGES,
@@ -39,5 +39,4 @@ setup(
     platforms="any",
     install_requires=REQUIRES,
     cmdclass=versioneer.get_cmdclass(),
-    entry_points={"console_scripts": ["frigate = frigate.cli:cli"]},
 )

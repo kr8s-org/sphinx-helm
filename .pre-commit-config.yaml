@@ -6,6 +6,6 @@ repos:
     hooks:
       - id: flake8
         args: ["--exclude=src,style,test"]
-        files: frigate/.*$
+        files: sphinx-helm/.*$
 default_language_version:
   python: python3

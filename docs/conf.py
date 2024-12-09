@@ -17,9 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Frigate"
-copyright = "2020, NVIDIA"
-author = "RAPIDS"
+project = "sphinx-helm"
+copyright = "2024, NVIDIA, kr8s contributors"
 
 
 # -- General configuration ---------------------------------------------------
@@ -27,7 +26,7 @@ author = "RAPIDS"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["frigate.sphinx.ext", "sphinx_click.ext"]
+extensions = ["sphinx_helm", "sphinx_click.ext"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -47,8 +46,6 @@ master_doc = 'index'
 #
 html_theme = "alabaster"
 html_theme_options = {
-    "logo": "images/logo.png",
-    "logo_name": True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
