@@ -11,9 +11,7 @@ sphinx:
 
 # Build configuration
 python:
-   version: 3.7
+   version: 3.12
    install:
-      - requirements: requirements.txt
-      - requirements: requirements_docs.txt
       - method: pip
-        path: .
+        path: .[docs]

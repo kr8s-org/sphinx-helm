@@ -59,7 +59,7 @@ Example
 
 -----------
 
-.. sphinx-helm:: ../sphinx-helm/tests/mockcharts/simple
+.. helm:: ../sphinx_helm/tests/mockcharts/simple
 
 .. _Sphinx: https://www.sphinx-doc.org/
 .. _`Install sphinx-helm`: index.html#installation
