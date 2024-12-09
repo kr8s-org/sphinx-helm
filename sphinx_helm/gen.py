@@ -8,7 +8,7 @@ from jinja2 import Environment, FileSystemLoader
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap
 
-from sphinx_helm import TEMPLATES_PATH, DOTFILE_NAME
+from .const import TEMPLATES_PATH
 from sphinx_helm.utils import flatten
 
 yaml = YAML()
@@ -249,10 +249,6 @@ def gen(chartdir, output_format, credits=True, deps=True):
     )
 
     templates = Environment(loader=FileSystemLoader([chartdir, TEMPLATES_PATH]))
-    if os.path.isfile(os.path.join(chartdir, DOTFILE_NAME)):
-        template_name = DOTFILE_NAME
-    else:
-        template_name = f"{output_format}.jinja2"
-    template = templates.get_template(template_name)
+    template = templates.get_template(f"{output_format}.jinja2")
 
     return template.render(**chart, values=values, credits=credits)

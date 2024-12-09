@@ -1,7 +1,7 @@
 import collections.abc
 import os
 
-from sphinx_helm import TEMPLATES_PATH
+from .const import TEMPLATES_PATH
 
 
 def flatten(nested_list):

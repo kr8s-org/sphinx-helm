@@ -41,7 +41,7 @@ Create an example ``hello-world`` Helm chart with ``helm create``.
 
 .. code-block:: python
 
-   extensions = ['sphinx-helm']
+   extensions = ['sphinx-helm.ext']
 
 - Now you can use the ``helm`` directive wherever you wish in your documentation.
 
@@ -59,7 +59,7 @@ Example
 
 -----------
 
-.. sphinx-helm:: ../sphinx-helm/tests/mockcharts/simple
+.. helm:: ../sphinx_helm/tests/mockcharts/simple
 
 .. _Sphinx: https://www.sphinx-doc.org/
 .. _`Install sphinx-helm`: index.html#installation
