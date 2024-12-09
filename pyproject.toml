@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "click",
-    "docutils>",
+    "docutils",
     "jinja2",
     "ruamel-yaml",
 ]
