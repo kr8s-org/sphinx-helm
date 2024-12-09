@@ -8,6 +8,7 @@ Features:
 
 - Render documentation from your `Chart.yaml` and `values.yaml` files.
 - Sphinx extension for including in Python documentation.
+- Works with `rst` and `md` documentation source files.
 
 ## Installation
 
