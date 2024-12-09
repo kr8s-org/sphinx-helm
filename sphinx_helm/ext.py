@@ -23,7 +23,7 @@ class HelmDirective(rst.Directive):
         )
         if self.options.get('output_format') is None:
             # if page is being built with myst use markdown
-            if self.state.document.settings.get('source_suffix') == '.md':
+            if self.state.document.current_source.endswith('.md'):
                 self.options.update({'output_format': 'markdown'})
             else:
                 self.options.update({'output_format': 'rst'})
