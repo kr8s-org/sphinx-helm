@@ -1,1 +1,1 @@
-frigate/_version.py export-subst
+sphinx-helm/_version.py export-subst
