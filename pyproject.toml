@@ -17,7 +17,7 @@ test = [
     "pytest-cov",
 ]
 docs = [
-    "sphinx>",
+    "sphinx",
     "sphinx-click",
 ]
 
