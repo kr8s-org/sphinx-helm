@@ -22,7 +22,7 @@ Add the extension to your Sphinx config.
 ```python
 # conf.py
 
-extensions = ['sphinx-helm']
+extensions = ['sphinx-helm.ext']
 ```
 
 Use the directive to generate documentation for your helm chart.
