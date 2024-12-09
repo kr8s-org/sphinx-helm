@@ -483,7 +483,7 @@ dependencies = [
     { name = "ruamel-yaml" },
 ]
 
-[package.dev-dependencies]
+[package.optional-dependencies]
 docs = [
     { name = "sphinx" },
     { name = "sphinx-click" },
@@ -498,17 +498,11 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.7" },
     { name = "docutils", specifier = ">=0.21.2" },
     { name = "jinja2", specifier = ">=3.1.4" },
+    { name = "pytest", marker = "extra == 'test'", specifier = ">=8.3.4" },
+    { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=6.0.0" },
     { name = "ruamel-yaml", specifier = ">=0.18.6" },
-]
-
-[package.metadata.requires-dev]
-docs = [
-    { name = "sphinx", specifier = ">=8.1.3" },
-    { name = "sphinx-click", specifier = ">=6.0.0" },
-]
-test = [
-    { name = "pytest", specifier = ">=8.3.4" },
-    { name = "pytest-cov", specifier = ">=6.0.0" },
+    { name = "sphinx", marker = "extra == 'docs'", specifier = ">=8.1.3" },
+    { name = "sphinx-click", marker = "extra == 'docs'", specifier = ">=6.0.0" },
 ]
 
 [[package]]

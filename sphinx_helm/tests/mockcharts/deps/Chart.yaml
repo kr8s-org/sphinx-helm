@@ -6,4 +6,4 @@ version: 0.1.0
 dependencies:
   - name: simple  # The simple chart but packaged and already pulled
     version: "0.1.0"
-    repository: 'https://example.com/sphinx-helm'
+    repository: 'https://example.com/frigate'
