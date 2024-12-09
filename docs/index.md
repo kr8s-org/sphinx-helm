@@ -4,6 +4,7 @@
 :maxdepth: 2
 :hidden: true
 customizing
+history
 ```
 
 `sphinx-helm` is a [Sphinx](https://www.sphinx-doc.org/) plugin for automatically generating documentation for your [Helm charts](https://helm.sh/).
