@@ -22,7 +22,11 @@ class HelmDirective(rst.Directive):
             self.arguments[0],
         )
         if self.options.get('output_format') is None:
-            self.options.update({'output_format': 'rst'})
+            # if page is being built with myst use markdown
+            if self.state.document.current_source.endswith('.md'):
+                self.options.update({'output_format': 'markdown'})
+            else:
+                self.options.update({'output_format': 'rst'})
         output = ViewList(gen(chart_path, output_format=self.options.get('output_format')).split("\n"))
 
         node = nodes.section()

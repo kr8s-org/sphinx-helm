@@ -1,4 +1,0 @@
-Customizing your docs
-======================
-
-TODO
