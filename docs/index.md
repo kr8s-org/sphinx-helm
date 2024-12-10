@@ -17,9 +17,6 @@ history
 
 `sphinx-helm` is a [Sphinx](https://www.sphinx-doc.org/) plugin for automatically generating documentation for your [Helm charts](https://helm.sh/).
 
-It will use the chart's `Chart.yaml` and `values.yaml` files in order to
-generate the content in a markup language of your choice.
-
 ## Features
 
 - Render documentation from your `Chart.yaml` and `values.yaml` files.
