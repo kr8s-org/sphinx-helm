@@ -40,6 +40,8 @@ docs = [
     "sphinx",
     "sphinx-click",
     "myst-parser>=3.0.1",
+    "furo>=2024.8.6",
+    "sphinx-autobuild>=2021.3.14",
 ]
 
 [build-system]
