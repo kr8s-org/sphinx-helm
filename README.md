@@ -8,7 +8,7 @@ Features:
 
 - Render documentation from your `Chart.yaml` and `values.yaml` files.
 - Sphinx extension for including in Python documentation.
-- Works with `rst` and `md` documentation source files.
+- Works with `.rst` and `.md` documentation source files.
 
 ## Installation
 
@@ -28,6 +28,18 @@ extensions = ['sphinx-helm.ext']
 
 Use the directive to generate documentation for your helm chart.
 
+### reStructuredText
+
 ```rst
 .. helm:: path/to/your/helm/chart
 ```
+
+### MyST Markdown
+
+````markdown
+
+```{helm} path/to/your/helm/chart
+
+```
+
+````
