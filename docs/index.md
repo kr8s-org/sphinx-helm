@@ -41,7 +41,7 @@ Creating hello-world
 Enable the plugin in your Sphinx `conf.py` file:
 
 ```python
-extensions = ['sphinx-helm.ext']
+extensions = ['sphinx_helm.ext']
 ```
 
 Now you can use the `helm` directive wherever you wish in your documentation.
