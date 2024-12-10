@@ -2,7 +2,9 @@
 
 This project was forked from [rapidsai/frigate](https://github.com/rapidsai/frigate). Frigate was originally created as a CLI tool for generating the `README` file for the [RAPIDS Helm Chart](https://github.com/rapidsai/helm-chart).
 
+```{note}
 Fun fact `frigate` was built on Thanksgiving and Good Friday 2019 as a hacky side project.
+```
 
 Later `frigate` was extended for use within Sphinx documentation, specifically in [dask/dask-kubernetes](https://github.com/dask/dask-kubernetes).
 
